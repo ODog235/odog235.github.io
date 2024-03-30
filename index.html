@@ -27,3 +27,16 @@
 <a href="https://odog235.github.io/leveleditorjsplatformer">Link to the website</a>
 <p></p>
 <img src="imageofle.png" alt="image of the game">
+<?php
+@$fp = fopen("logfile.html", "ab");
+if(!$fp) {
+echo "Could not open file for logging";
+}
+else {
+$str = $_SERVER["REMOTE_ADDR"];
+$str .= " ";
+$str .= date("H:i, d M Y");
+fwrite($fp, $str);
+fclose($fp);
+}
+?> 
