@@ -1,0 +1,61 @@
+body {
+    margin: 0; /* Remove goofy default margin */
+    padding: 0; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky; /*so you can scroll and it stays at the top*/
+    top: 0;
+    z-index: 1000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* apparnently this is way easier than the manual way i tried to do*/
+/*nvm only the other way works lol*/
+li a.active {
+    background-color: #2596be;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'aviano';
+    src: url('d.woff') format('woff');
+}
+.blog_ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: initial;
+    overflow: visible;
+    background-color: transparent;
+    position: static;
+    top: auto;
+    z-index: auto;
+    text-align: center;
+}
+ul.blog_ul li{
+    float: none;
+    display: inline-block;
+}
+.right-align {
+    float: right;
+    background-color: grey; /*grey so people actually notice it*/
+}
